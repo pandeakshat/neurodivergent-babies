@@ -1,0 +1,42 @@
+[
+  {
+    "Type": "Utensil",
+    "Item Name": "Small Stainless Steel Skillet",
+    "Description/Benefit": "Good place to start; alternatives to non-stick if worried about PTFEs."
+  },
+  {
+    "Type": "Utensil",
+    "Item Name": "Saucepan",
+    "Description/Benefit": "Good place to start."
+  },
+  {
+    "Type": "Appliance",
+    "Item Name": "Microwave",
+    "Description/Benefit": ""
+  },
+  {
+    "Type": "Appliance",
+    "Item Name": "Air Fryer",
+    "Description/Benefit": "- Easily roast veggies and meats \n- Cook things from the freezer fast fast\n- Line this with foil or parchment paper to make cleaning easier"
+  },
+  {
+    "Type": "Appliance",
+    "Item Name": "Oven",
+    "Description/Benefit": ""
+  },
+  {
+    "Type": "Appliance",
+    "Item Name": "Instant Pot",
+    "Description/Benefit": "- Lets you do both quick recipes and slow cooking \n- the latter can take a lot of time but you’ll have a meal at the end of the day"
+  },
+  {
+    "Type": "Appliance",
+    "Item Name": "Small Immersion Blender (Magic Bullet)",
+    "Description/Benefit": ""
+  },
+  {
+    "Type": "Appliance",
+    "Item Name": "Sandwich Maker",
+    "Description/Benefit": ""
+  }
+]

@@ -1,0 +1,28 @@
+---
+// src/components/FloatingNavbar.astro
+const navLinks = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Resources', href: '/resoruces' },
+  { name: 'Contact', href: '/contact' },
+];
+---
+
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 z-[1000]
+            max-w-fit px-8 py-4 rounded-full shadow-lg
+            bg-card bg-opacity-80 backdrop-blur-md border border-border border-opacity-20
+            transition-all duration-300 ease-in-out
+            md:top-3 md:px-6 md:py-3 sm:px-4 sm:py-2">
+  <ul class="flex gap-6 m-0 p-0 list-none md:gap-4 sm:gap-3">
+    {navLinks.map((link) => (
+      <li>
+        <a href={link.href} class="text-foreground font-semibold text-lg px-4 py-2 rounded-full
+                                    no-underline transition-colors duration-200 ease-in-out
+                                    hover:bg-primary hover:text-primary-foreground
+                                    md:text-base md:px-3 md:py-1.5 sm:text-sm sm:px-2.5 sm:py-1">
+          {link.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>

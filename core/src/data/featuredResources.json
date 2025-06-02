@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "title": "Feed Yourself",
+    "description": "Depresso Expresso Guide to Feeding Yourself.",
+    "href": "/guides/feed-yourself",
+    "icon": "💡"
+  },
+  {
+    "id": "2",
+    "title": "Daily Routines for Autism",
+    "description": "Practical tips and printable templates for establishing helpful routines. Improve predictability and calm.",
+    "href": "/guides/daily-routines-autism",
+    "icon": "🗓️"
+  },
+  {
+    "id": "3",
+    "title": "Sensory Regulation Techniques",
+    "description": "Explore various methods to manage sensory sensitivities in everyday life. Discover calming strategies.",
+    "href": "/guides/sensory-regulation",
+    "icon": "🧘"
+  },
+  {
+    "id": "4",
+    "title": "Navigating Neurodivergent Burnout",
+    "description": "Identify signs of burnout and discover strategies for recovery and prevention. Protect your well-being.",
+    "href": "/guides/neurodivergent-burnout",
+    "icon": "🩹"
+  },
+  {
+    "id": "5",
+    "title": "Advocacy and Rights",
+    "description": "Learn about your rights and how to advocate effectively for yourself or your loved ones.",
+    "href": "/guides/advocacy-rights",
+    "icon": "🗣️"
+  },
+  {
+    "id": "6",
+    "title": "Mindfulness for Neurodiversity",
+    "description": "Gentle introduction to mindfulness practices tailored for neurodivergent individuals.",
+    "href": "/guides/mindfulness",
+    "icon": "🌸"
+  }
+]
