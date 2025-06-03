@@ -1,0 +1,22 @@
+---
+// src/components/sections/FeaturedResourcesSection.astro
+import ResourceCard from '../ResourceCard.astro';
+import featuredResources from '../../data/featuredResources.json'; // Import your JSON data
+---
+
+<section class="bg-card py-16 md:py-12">
+  <div class="container mx-auto px-8 text-center">
+    <h2 class="text-4xl md:text-3xl font-heading mb-2 text-primary">Our Featured Guides & Resources</h2>
+    <p class="text-lg text-muted-foreground max-w-3xl mx-auto mb-10">Hand-picked resources designed to support you on your journey. Click to learn more.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+      {featuredResources.map((resource) => (
+        <ResourceCard
+          title={resource.title}
+          description={resource.description}
+          href={resource.href}
+          icon={resource.icon}
+        />
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+---
+// src/components/sections/TestimonialsSection.astro
+import TestimonialCard from '../TestimonialCard.astro';
+import testimonials from '../../data/testimonials.json'; // Import your JSON data
+---
+
+<section class="bg-background py-16 md:py-12">
+  <div class="container mx-auto px-8 text-center">
+    <h2 class="text-4xl md:text-3xl font-heading mb-2 text-primary">What Our Community Says</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+      {testimonials.map((testimonial) => (
+        <TestimonialCard
+          quote={testimonial.quote}
+          author={testimonial.author}
+        />
+      ))}
+    </div>
+  </div>
+</section>

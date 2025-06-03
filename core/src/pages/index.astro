@@ -1,0 +1,39 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+import FeaturedResourcesSection from '../components/sections/FeaturedResourcesSection.astro';
+import TestimonialsSection from '../components/sections/TestimonialsSection.astro';
+
+// Hero Section Image (Example - replace with a relevant, calming image)
+import heroImage from '../assets/images/calm-path.jpg'; // Create this image in src/assets/images or use your own
+---
+
+<Layout title="Neurodivergent Babies">
+  <main>
+    <section class="relative flex items-center justify-center min-h-[70vh] text-white text-shadow-md overflow-hidden">
+      <div class="hero-content relative z-10 max-w-4xl p-8 text-center">
+        <h1 class="text-6xl md:text-5xl sm:text-4xl font-heading mb-2 text-white drop-shadow-lg">Empowering Neurodivergent Journeys</h1>
+        <p class="text-2xl md:text-xl sm:text-lg mb-8">Providing accessible guides, resources, and community support for neurodivergent individuals and their allies.</p>
+        <div class="flex gap-6 justify-center">
+          <a href="/resources" class="btn btn-primary">Explore All Resources</a>
+          <a href="/about" class="btn btn-secondary">Learn About Us</a>
+        </div>
+      </div>
+      <div class="absolute inset-0 bg-[oklch(0%_0_0_/_0.4)] z-[-1]"></div>
+      <img src={heroImage.src} alt="Calm path through a forest, representing a journey" class="absolute inset-0 w-full h-full object-cover z-[-2]" width={heroImage.width} height={heroImage.height}>
+    </section>
+
+    <FeaturedResourcesSection />
+    <TestimonialsSection />
+
+    <section class="bg-secondary text-secondary-foreground py-16 md:py-12">
+      <div class="container mx-auto px-8 text-center">
+        <h2 class="text-4xl md:text-3xl font-heading mb-2 text-secondary-foreground">Join Our Supportive Community</h2>
+        <p class="text-lg text-secondary-foreground text-opacity-90 max-w-3xl mx-auto mb-10">Connect with others, share experiences, and find encouragement in our safe and understanding space.</p>
+        <a href="YOUR_WHATSAPP_GROUP_LINK" target="_blank" rel="noopener noreferrer" class="btn btn-primary-accent mt-6">Join Our WhatsApp Group</a>
+        <p class="text-sm mt-4 italic text-secondary-foreground text-opacity-80"><i>(Please ensure the WhatsApp group link is valid and safe)</i></p>
+      </div>
+    </section>
+
+  </main>
+</Layout>

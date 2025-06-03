@@ -1,0 +1,338 @@
+[
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Biscuits",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Crackers",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Oatmeal",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Granola",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Nuts",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Seeds",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Dals",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Tetrapak milk",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Popcorn",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Makhana",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Jerky",
+    "Notes/Tips": "Dehydrated meat",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Canned Fish",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Canned Chana",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Canned Peas",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Canned Corn",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Long Shelf Life (Outside Fridge)",
+    "Item": "Honey",
+    "Notes/Tips": "",
+    "Type": "Pantry Item"
+  },
+  {
+    "Category": "Dry Condiments",
+    "Item": "Salt",
+    "Notes/Tips": "In shakers",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Dry Condiments",
+    "Item": "Pepper",
+    "Notes/Tips": "In shakers",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Dry Condiments",
+    "Item": "Chilli Flakes",
+    "Notes/Tips": "",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Dry Condiments",
+    "Item": "Chilli Powder",
+    "Notes/Tips": "",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Dry Condiments",
+    "Item": "Oregano",
+    "Notes/Tips": "Or herb mixes",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Dry Condiments",
+    "Item": "Garlic Powder",
+    "Notes/Tips": "",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Dry Condiments",
+    "Item": "Chaat Masala",
+    "Notes/Tips": "",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Dry Condiments",
+    "Item": "Bouillon Cubes",
+    "Notes/Tips": "Stock cubes",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Dry Condiments",
+    "Item": "Thai Fruit Salt",
+    "Notes/Tips": "Salt + Sugar + Chilli powder",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Frozen Food",
+    "Item": "Dumplings",
+    "Notes/Tips": "Pre-prepared and ready to eat",
+    "Type": "Frozen Item"
+  },
+  {
+    "Category": "Frozen Food",
+    "Item": "Patties",
+    "Notes/Tips": "Pre-prepared and ready to eat",
+    "Type": "Frozen Item"
+  },
+  {
+    "Category": "Frozen Food",
+    "Item": "Mixed Veggies",
+    "Notes/Tips": "Ingredient",
+    "Type": "Frozen Item"
+  },
+  {
+    "Category": "Long Shelf Life (Inside Fridge)",
+    "Item": "Cheese",
+    "Notes/Tips": "",
+    "Type": "Refrigerated Item"
+  },
+  {
+    "Category": "Long Shelf Life (Inside Fridge)",
+    "Item": "Kimchi",
+    "Notes/Tips": "",
+    "Type": "Refrigerated Item"
+  },
+  {
+    "Category": "Long Shelf Life (Inside Fridge)",
+    "Item": "Rice Mixes",
+    "Notes/Tips": "Lemon rice\nTamarind rice\nTomato rice",
+    "Type": "Refrigerated Item"
+  },
+  {
+    "Category": "Long Shelf Life (Inside Fridge)",
+    "Item": "Salsa",
+    "Notes/Tips": "Pre-made",
+    "Type": "Refrigerated Item"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Ketchup",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Hot Sauces",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Sandwich Spread",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Mayo",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Relish",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Pickles/Achaar",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Tomato Paste",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Tomato Sauce",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Butter",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Ghee",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Salad Dressing",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Vinegar Pickles",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Dressings & Dips",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Soy Sauce",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Chilli Oil",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Balsamic Vinegar",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Chilli Vinegar",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Kachampuli Vinegar",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Condiments (Fridge)",
+    "Item": "Coconut Vinegar",
+    "Notes/Tips": "Buy or make ahead",
+    "Type": "Condiment"
+  },
+  {
+    "Category": "Short Shelf Life (Mixed Storage)",
+    "Item": "Yogurt",
+    "Notes/Tips": "Store inside fridge",
+    "Type": "Fresh Item"
+  },
+  {
+    "Category": "Short Shelf Life (Mixed Storage)",
+    "Item": "Veggies",
+    "Notes/Tips": "Fresh, can buy pre-chopped. \nCarrots last a bit, soak in water for a few min before use to make them crunchy again. \nPotatoes last a while outside depending on climate.",
+    "Type": "Fresh Item"
+  },
+  {
+    "Category": "Short Shelf Life (Mixed Storage)",
+    "Item": "Fruit",
+    "Notes/Tips": "Apples stay good for ages",
+    "Type": "Fresh Item"
+  },
+  {
+    "Category": "Short Shelf Life (Mixed Storage)",
+    "Item": "Hard Boiled Eggs",
+    "Notes/Tips": "Last 5-7 days",
+    "Type": "Fresh Item"
+  },
+  {
+    "Category": "Very Short Shelf Life (Refrigerated)",
+    "Item": "Milk",
+    "Notes/Tips": "",
+    "Type": "Refrigerated Item"
+  }
+]

@@ -1,0 +1,20 @@
+---
+// src/components/ResourceCard.astro
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  icon: string;
+}
+
+const { title, description, href, icon } = Astro.props;
+---
+
+<a href={href} class="block p-7 rounded-lg shadow-md transition-transform duration-200 ease-in-out
+                       border border-border text-left text-foreground bg-card
+                       hover:translate-y-[-5px] hover:shadow-lg hover:border-primary">
+  <span class="text-5xl block mb-3">{icon}</span>
+  <h3 class="text-2xl font-heading mb-2 text-primary">{title}</h3>
+  <p class="text-base text-muted-foreground mb-4">{description}</p>
+  <span class="font-semibold text-primary block mt-4">Read More &rarr;</span>
+</a>

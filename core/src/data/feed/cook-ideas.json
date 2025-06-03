@@ -1,0 +1,198 @@
+[
+  {
+    "Effort Level": "No Cook Food Ideas",
+    "Food Type": "Cheese and crackers",
+    "Description": "Pre-made variety. (Store-bought)",
+    "Notes": "Cheese, Crackers",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "No Cook Food Ideas",
+    "Food Type": "Popcorn (Pre-made)",
+    "Description": "Pre-made variety. (Store-bought)",
+    "Notes": "Pre-made popcorn",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "No Cook Food Ideas",
+    "Food Type": "Makhana",
+    "Description": "Pre-made variety. (Store-bought) (Fox Nuts)",
+    "Notes": "Makhana (fox nuts)",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "No Cook Food Ideas",
+    "Food Type": "Granola",
+    "Description": "Pre-made variety. (Store-bought)",
+    "Notes": "Granola",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "No Cook Food Ideas",
+    "Food Type": "Bars",
+    "Description": "Granola bars, protein bars, or any other alternative (Store-bought)",
+    "Notes": "Granola bars, protein bars",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "No Cook Food Ideas",
+    "Food Type": "Fruits + Thair Fruit Salt",
+    "Description": "Any Fruit - Bite & Dip in Fruit Salt\n(Fruit Salt - (Salt + Sugar + Red Chilli or Chaat Masala))",
+    "Notes": "Fruit, Thai fruit salt (salt+sugar+red chilli) or chaat masala",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "No Cook Food Ideas",
+    "Food Type": "Fruit salad",
+    "Description": "Cut up any fruit. \nAdd Thai fruit salt or chaat masala. \nAdd one veg if adventurous.",
+    "Notes": "Assorted fruits, Thai fruit salt / chaat masala, optional veg",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Popcorn (Microwave)",
+    "Description": "Microwave popcorn bags \nStore-Bought. \nFollow Instructions for microwave",
+    "Notes": "Microwave popcorn bags",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Popcorn (Stovetop)",
+    "Description": "Popcorn Kernels and Oil/butter.\nAdd on sauce pan or anything that can be covered.\nWait for popping, move it slowly for stirring without opening the cover.\nKeep gas to medium, turn off when popping has a 2-3 second gap.",
+    "Notes": "Popcorn kernels, oil",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Scrambled Eggs (Stovetop)",
+    "Description": "Scramble them. \nAdd cheese or seasoning for variety. \nIf too hard/leathery, add salsa, ketchup, mayo, dressing. \nMushrooms can be crumbled & cooked for toppings. \nPre-cut frozen veggies can be added.",
+    "Notes": "Eggs, optional: cheese, seasoning, salsa, ketchup, mayo, dressing, mushrooms, pre-cut frozen veggies",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Scrambled Eggs (Microwave)",
+    "Description": "Crack eggs into a microwaveable container. \nOptionally add milk, butter, salt.\nBeat and mix. \nCook in microwave, checking every minute until still a bit gooey. \nMix.",
+    "Notes": "Eggs, optional: milk, butter, salt",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Boiled eggs",
+    "Description": "Boil a few extra and store in the fridge.",
+    "Notes": "Eggs",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Boiled eggs (Reheating)",
+    "Description": "To warm up, microwave some water and pour over cold eggs, keep aside for 1 minute.",
+    "Notes": "Pre-boiled eggs, water",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Boiled Eggs - Cooking Timings (from room temp water)",
+    "Description": "10 minutes for soft boiled (harder to peel), \n13 minutes for hard boiled.",
+    "Notes": "",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Boiled Eggs - Cooking Timings (from boiling water)",
+    "Description": "7 minutes for soft boiled (harder to peel), \n10 minutes for hard boiled.",
+    "Notes": "",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Boiled Eggs - Peeling eggs",
+    "Description": "Lowest energy: Break in half and scoop out. \nOr, put in cold/room temp water after boiling, crack shell all over, leave for 5 mins.",
+    "Notes": "",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Pre-cut frozen veggies",
+    "Description": "Can add to eggs. \nSteam in microwave (top with salt, butter). \nAirfry or put in an oven to crisp. \nFry in a pan if you can.",
+    "Notes": "Pre-cut frozen veggies, optional: salt, butter",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Cheese sandwich",
+    "Description": "Butter in pan, set to low heat. \nAdd two slices of bread. \nPut a slice of cheese between them when toasted.",
+    "Notes": "Bread, butter, cheese slice",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Very Little Cooking Ideas",
+    "Food Type": "Pre-packaged soup",
+    "Description": "Use pre-packaged soup packets. \nAdd to appropriate boiling water.\nKeep mixing to avoid clumps.\n* Eat with cheese sandwich. \n* Cut up cheese sandwich for croutons.",
+    "Notes": "Pre-packaged soup packets",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Buy Something + Make Something",
+    "Food Type": "Order curry + make rice",
+    "Description": "Order the curry and make rice at home.",
+    "Notes": "Take-out curry, rice",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Buy Something + Make Something",
+    "Food Type": "Order roti + make sabzi",
+    "Description": "Order roti and make sabzi (vegetable dish) at home.",
+    "Notes": "Take-out roti, ingredients for sabzi",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Buy Something + Make Something",
+    "Food Type": "Order protein + make salad",
+    "Description": "Order protein/meat and make a salad.",
+    "Notes": "Take-out protein/meat, salad ingredients",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Buy Something + Make Something",
+    "Food Type": "Buy 2x",
+    "Description": "If it’s a food you like, buy 2x and store for later.",
+    "Notes": "-",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Beverages",
+    "Food Type": "Bought Beverages",
+    "Description": "Feel free to buy \n- Iced tea \n- Cold brew coffee \n- Juices.",
+    "Notes": "Store-bought iced tea, cold brew coffee, juices",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Beverages",
+    "Food Type": "Homemade Iced tea",
+    "Description": "Make large batches when you can.",
+    "Notes": "Tea bags/leaves, water, sugar/sweetener (optional)",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Beverages",
+    "Food Type": "Homemade Cold brew coffee",
+    "Description": "Make large batches when you can.",
+    "Notes": "Coffee grounds, water",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "Beverages",
+    "Food Type": "Homemade Juices",
+    "Description": "Make large batches when you can.",
+    "Notes": "Fruits/Vegetables for juicing",
+    "Ingredients (if applicable)": ""
+  },
+  {
+    "Effort Level": "I can cook! And maybe prep",
+    "Food Type": "Stovetop Granola",
+    "Description": "For a Smaller Batch of Granola - your Stovetop Works Just Fine. \nDon’t skimp on fat and sugar for flavor and crunch. \nStore well in an airtight container for a couple of weeks \n(Disclaimer: I haven’t tried it, I will update when I do). \nToast nuts/seeds in dry pan, remove. \nBrown butter, add oats, stir often. \nRemove from heat, add fruit and nuts.",
+    "Notes": "Oats/grains, Butter/Ghee/Oil, Honey/Maple/Sugar, Nuts, fruit, spices",
+    "Ingredients (if applicable)": ""
+  }
+]
