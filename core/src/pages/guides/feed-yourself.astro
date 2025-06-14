@@ -7,7 +7,7 @@ import generalGuideData from '../../data/feed/general-guide.json';
 import cookIdeasData from '../../data/feed/cook-ideas.json';
 
 import heroImage from '../../assets/images/kitchen-calm.jpg';
-import preparingFoodImage from '../../assets/images/preparing-food.jpg';
+import preparingFoodImage from '../../assets/images/preparing-food.png';
 
 const cookIdeasByEffort = cookIdeasData.reduce((acc, item) => {
   const effortLevel = item['Effort Level'] || 'Uncategorized';
@@ -47,29 +47,6 @@ const cookIdeasByEffort = cookIdeasData.reduce((acc, item) => {
       </p>
     </section>
 
-    <section class="max-w-4xl mx-auto mb-16 text-center bg-card p-8 rounded-lg shadow-sm border border-border">
-      <h2 class="text-3xl font-heading text-primary mb-6">Explore More Resources</h2>
-      <div class="flex flex-col md:flex-row justify-center gap-6">
-        <a href="/guides/pantry-utensils" class="btn btn-primary" aria-label="View pantry and utensils guide">Pantry & Utensils Guide</a>
-        <a href="#cooking-ideas" class="btn btn-secondary" aria-label="View simple meal ideas">Simple Meal Ideas (on this page)</a>
-      </div>
-    </section>
-
-    <section class="max-w-4xl mx-auto mb-16 text-left">
-      <h2 class="text-4xl font-heading text-primary mb-6">Why Is Feeding Yourself Hard Sometimes?</h2>
-      <p class="text-lg mb-4">
-        It's okay if preparing food feels like a huge task. Many neurodivergent people experience challenges with:
-      </p>
-      <ul class="list-disc list-inside space-y-2 mb-8 text-lg">
-        <li>✨ Executive Function (planning, starting tasks)</li>
-        <li>✨ Sensory Sensitivities (textures, smells, sounds of cooking)</li>
-        <li>✨ Decision Fatigue (too many choices at the grocery store or in recipes)</li>
-        <li>✨ Interoception (difficulty noticing hunger cues)</li>
-      </ul>
-      <p class="text-lg">
-        This guide is here to simplify the process and give you actionable steps to make feeding yourself easier.
-      </p>
-    </section>
 
     {Array.isArray(generalGuideData) && generalGuideData.length > 0 ? (
       <section class="max-w-4xl mx-auto mb-16 text-left">
@@ -180,5 +157,24 @@ const cookIdeasByEffort = cookIdeasData.reduce((acc, item) => {
         <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Join our WhatsApp community">Join Our Community</a>
       </div>
     </section>
+
+
+    <section class="max-w-4xl mx-auto mb-16 text-left">
+      <br />
+      <h2 class="text-4xl font-heading text-primary mb-6">Why Is Feeding Yourself Hard Sometimes?</h2>
+      <p class="text-lg mb-4">
+        It's okay if preparing food feels like a huge task. Many neurodivergent people experience challenges with:
+      </p>
+      <ul class="list-disc list-inside space-y-2 mb-8 text-lg">
+        <li>✨ Executive Function (planning, starting tasks)</li>
+        <li>✨ Sensory Sensitivities (textures, smells, sounds of cooking)</li>
+        <li>✨ Decision Fatigue (too many choices at the grocery store or in recipes)</li>
+        <li>✨ Interoception (difficulty noticing hunger cues)</li>
+      </ul>
+      <p class="text-lg">
+        This guide is here to simplify the process and give you actionable steps to make feeding yourself easier.
+      </p>
+    </section>
+
   </main>
 </Layout>
