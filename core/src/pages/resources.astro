@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Hero Section Image (You can replace this with a relevant image for your brand)
+import heroImage from '../assets/images/calm-path.jpg'; // Ensure this image exists in src/assets/images
+
+---
+
+<Layout title="Coming Soon - Neurodivergent Babies">
+  <main>
+    <section class="relative flex items-center justify-center min-h-screen text-white text-shadow-md overflow-hidden">
+      <div class="hero-content relative z-10 max-w-4xl p-8 text-center">
+        <h1 class="text-6xl md:text-5xl sm:text-4xl font-heading mb-4 text-white drop-shadow-lg">
+          This Page is Under Construction
+        </h1>
+        <p class="text-2xl md:text-xl sm:text-lg mb-8">
+          We're working hard to bring you a new and improved experience. We'll be here soon, stay tuned!
+        </p>
+        <div class="mt-6">
+          <p class="text-lg text-white text-opacity-90">
+            For updates, you can follow us on our social media channels or contact us at: <a href="mailto:contact@yourdomain.com" class="underline">contact@yourdomain.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="absolute inset-0 bg-[oklch(0%_0_0_/_0.5)] z-[-1]"></div>
+      <img
+        src={heroImage.src}
+        alt="A work in progress concept, like a path being built"
+        class="absolute inset-0 w-full h-full object-cover z-[-2]"
+        width={heroImage.width}
+        height={heroImage.height}
+      >
+    </section>
+  </main>
+</Layout>
