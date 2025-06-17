@@ -4,7 +4,8 @@ import Layout from '../../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 
 import generalGuideData from '../../data/feed/general-guide.json';
-import cookIdeasData from '../../data/feed/cook-ideas.json';
+import cookIdeasData from '../../data/feed/cook.json';
+import stockData from '../../data/feed/stock.json';
 
 import heroImage from '../../assets/images/kitchen-calm.jpg';
 import preparingFoodImage from '../../assets/images/preparing-food.png';
@@ -15,6 +16,16 @@ const cookIdeasByEffort = cookIdeasData.reduce((acc, item) => {
     acc[effortLevel] = [];
   }
   acc[effortLevel].push(item);
+  return acc;
+}, {});
+
+// Process stock data, grouping items by category
+const stockByCategory = stockData.reduce((acc, item) => {
+  const category = item['Category'] || 'Uncategorized';
+  if (!acc[category]) {
+    acc[category] = [];
+  }
+  acc[category].push(item);
   return acc;
 }, {});
 ---
@@ -47,7 +58,6 @@ const cookIdeasByEffort = cookIdeasData.reduce((acc, item) => {
       </p>
     </section>
 
-
     {Array.isArray(generalGuideData) && generalGuideData.length > 0 ? (
       <section class="max-w-4xl mx-auto mb-16 text-left">
         <h2 class="text-4xl font-heading text-primary mb-6">General Advice</h2>
@@ -68,54 +78,103 @@ const cookIdeasByEffort = cookIdeasData.reduce((acc, item) => {
       </section>
     )}
 
-    {Object.keys(cookIdeasByEffort).length > 0 ? (
-      <section id="cooking-ideas" class="max-w-4xl mx-auto mb-16 text-left">
-        <h2 class="text-3xl font-heading text-primary mb-4 flex items-center gap-3">
-          <span class="text-4xl">🍳</span> Simple Meal Ideas (Minimal Steps)
-        </h2>
-        {Object.entries(cookIdeasByEffort).map(([effortLevel, ideas]) => (
-          Array.isArray(ideas) && ideas.length > 0 ? (
-            <div class="mb-10">
-              <h3 class="text-2xl font-heading text-primary mb-4 mt-6">{effortLevel}</h3>
-              <div class="grid md:grid-cols-2 gap-8">
-                {ideas.map(idea => (
-                  idea['Food Type'] ? (
-                    <div class="bg-card p-6 rounded-lg shadow-sm border border-border">
-                      <h4 class="text-xl font-heading text-primary mb-2">{idea['Food Type']}</h4>
-                      {(idea['Description'] || idea['Notes']) && (
-                        <p class="text-lg mb-2 text-muted-foreground">
-                          {idea['Description'] || idea['Notes']}
-                        </p>
-                      )}
-                      {idea['Ingredients (if applicable)'] && (
-                        <p class="text-sm text-muted-foreground italic mt-2">Ingredients: {idea['Ingredients (if applicable)']}</p>
-                      )}
+    <section id="ideas-and-stock" class="max-w-4xl mx-auto mb-16 text-left">
+      <div class="mb-8 flex border-b border-border">
+        <button
+          data-tab-trigger="cooking"
+          class="tab-button text-2xl font-heading text-primary p-4 border-b-2 border-primary"
+          aria-label="Show Cooking Ideas"
+        >
+          🍳 Cooking Ideas
+        </button>
+        <button
+          data-tab-trigger="stock"
+          class="tab-button text-2xl font-heading text-muted-foreground p-4 border-b-2 border-transparent"
+          aria-label="Show what to stock"
+        >
+          🛒 Stock
+        </button>
+      </div>
+
+      <div>
+        <div id="cooking-content" data-tab-content="cooking" role="tabpanel">
+          {Object.keys(cookIdeasByEffort).length > 0 ? (
+            <div>
+              {Object.entries(cookIdeasByEffort).map(([effortLevel, ideas]) => (
+                Array.isArray(ideas) && ideas.length > 0 ? (
+                  <div class="mb-10">
+                    <h3 class="text-2xl font-heading text-primary mb-4 mt-6">{effortLevel}</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                      {ideas.map(idea => (
+                        idea['Food Type'] ? (
+                          <div class="bg-card p-6 rounded-lg shadow-sm border border-border">
+                            <h4 class="text-xl font-heading text-primary mb-2">{idea['Food Type']}</h4>
+                            {(idea['Description'] || idea['Notes']) && (
+                              <p class="text-lg mb-2 text-muted-foreground">
+                                {idea['Description'] || idea['Notes']}
+                              </p>
+                            )}
+                            {idea['Ingredients (if applicable)'] && (
+                              <p class="text-sm text-muted-foreground italic mt-2">Ingredients: {idea['Ingredients (if applicable)']}</p>
+                            )}
+                          </div>
+                        ) : null
+                      ))}
                     </div>
-                  ) : null
-                ))}
-              </div>
+                  </div>
+                ) : null
+              ))}
+              {preparingFoodImage && (
+                <div class="mt-12 text-center">
+                  <Image
+                    src={preparingFoodImage}
+                    alt="Hands preparing simple food on a clean cutting board, symbolizing easy cooking."
+                    widths={[300, 600, 900]}
+                    sizes="(max-width: 768px) 90vw, 60vw"
+                    loading="lazy"
+                    quality={80}
+                    class="rounded-lg shadow-md mx-auto"
+                  />
+                </div>
+              )}
             </div>
-          ) : null
-        ))}
-        {preparingFoodImage && (
-          <div class="mt-12 text-center">
-            <Image
-              src={preparingFoodImage}
-              alt="Hands preparing simple food on a clean cutting board, symbolizing easy cooking."
-              widths={[300, 600, 900]}
-              sizes="(max-width: 768px) 90vw, 60vw"
-              loading="lazy"
-              quality={80}
-              class="rounded-lg shadow-md mx-auto"
-            />
-          </div>
-        )}
-      </section>
-    ) : (
-      <section id="cooking-ideas" class="max-w-4xl mx-auto mb-16 text-left">
-        <p class="text-lg text-muted-foreground">No meal ideas available at the moment.</p>
-      </section>
-    )}
+          ) : (
+            <p class="text-lg text-muted-foreground">No meal ideas available at the moment.</p>
+          )}
+        </div>
+
+        <div id="stock-content" data-tab-content="stock" class="hidden" role="tabpanel">
+            {Object.keys(stockByCategory).length > 0 ? (
+                <div>
+                  <p class="text-lg text-muted-foreground mb-8">
+                    Keep these items on hand to make sure there's always something you can prepare with minimal effort. This is your "failsafe" list.
+                  </p>
+                  {Object.entries(stockByCategory).map(([category, items]) => (
+                    Array.isArray(items) && items.length > 0 ? (
+                      <div class="mb-10">
+                        <h3 class="text-2xl font-heading text-primary mb-4 mt-6">{category}</h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                          {items.map(item => (
+                            item['Item'] ? (
+                              <div class="bg-card p-6 rounded-lg shadow-sm border border-border">
+                                <h4 class="text-xl font-heading text-primary mb-2">{item['Item']}</h4>
+                                {item['Notes/Tips'] && (
+                                  <p class="text-lg text-muted-foreground">{item['Notes/Tips']}</p>
+                                )}
+                              </div>
+                            ) : null
+                          ))}
+                        </div>
+                      </div>
+                    ) : null
+                  ))}
+                </div>
+            ) : (
+                <p class="text-lg text-muted-foreground">No stock information available at the moment.</p>
+            )}
+        </div>
+      </div>
+    </section>
 
     <section class="max-w-4xl mx-auto mb-16 text-left bg-secondary p-8 rounded-lg shadow-sm text-secondary-foreground">
       <h2 class="text-3xl font-heading mb-4 flex items-center gap-3">
@@ -126,7 +185,7 @@ const cookIdeasByEffort = cookIdeasData.reduce((acc, item) => {
           <strong>Stock Your Staples:</strong> Keep easy-to-prepare items always on hand: canned goods, pasta, rice, frozen veggies, bread, peanut butter, eggs.
         </li>
         <li>
-          <strong>"Snack Plates" are Meals:</strong> Don't underestimate a plate alexisof various snacks (cheese, fruit, crackers, veggies, hummus, olives, pre-cooked chicken) as a perfectly valid meal.
+          <strong>"Snack Plates" are Meals:</strong> Don't underestimate a plate of various snacks (cheese, fruit, crackers, veggies, hummus, olives, pre-cooked chicken) as a perfectly valid meal.
         </li>
         <li>
           <strong>Batch Cook Basics:</strong> If you have an "on" day, cook a big batch of rice, quinoa, or roasted vegetables. These can be easily added to meals for days.
@@ -152,12 +211,10 @@ const cookIdeasByEffort = cookIdeasData.reduce((acc, item) => {
         We understand that executive dysfunction and sensory challenges can make feeding yourself difficult. Remember, progress not perfection. Every step you take to nourish yourself is a win.
       </p>
       <div class="flex gap-4 justify-center flex-wrap">
-        <a href="/resources" class="btn btn-primary" aria-label="Find more resources for feeding yourself">Find More Resources</a>
-        <!-- TODO: Replace with actual WhatsApp group link -->
+        <!-- <a href="/resources" class="btn btn-primary" aria-label="Find more resources for feeding yourself">Find More Resources</a> -->
         <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" aria-label="Join our WhatsApp community">Join Our Community</a>
       </div>
     </section>
-
 
     <section class="max-w-4xl mx-auto mb-16 text-left">
       <br />
@@ -175,6 +232,33 @@ const cookIdeasByEffort = cookIdeasData.reduce((acc, item) => {
         This guide is here to simplify the process and give you actionable steps to make feeding yourself easier.
       </p>
     </section>
-
   </main>
 </Layout>
+
+<script>
+  // Select all tab trigger buttons and content panels
+  const tabButtons = document.querySelectorAll('[data-tab-trigger]');
+  const tabContents = document.querySelectorAll('[data-tab-content]');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Get the target content ID from the button's data attribute
+      const targetTab = button.dataset.tabTrigger;
+
+      // Update button styles to show which is active
+      tabButtons.forEach(btn => {
+        const isActive = btn === button;
+        btn.classList.toggle('text-primary', isActive);
+        btn.classList.toggle('border-primary', isActive);
+        btn.classList.toggle('text-muted-foreground', !isActive);
+        btn.classList.toggle('border-transparent', !isActive);
+      });
+
+      // Show the correct content panel and hide the others
+      tabContents.forEach(content => {
+        const isTargetContent = content.dataset.tabContent === targetTab;
+        content.classList.toggle('hidden', !isTargetContent);
+      });
+    });
+  });
+</script>

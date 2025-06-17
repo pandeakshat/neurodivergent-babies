@@ -20,9 +20,8 @@ const SPREADSHEET_ID = '1cR05XN_ezXbB811eBvhY_-g7bmscmoLfbhzSOpG1U5U';
 // Define which sheets to process and where to save their JSON
 const sheetsToProcess = [
   { name: 'General', outputPath: 'data/feed/general-guide.json' },
-  { name: 'Pantry-Stock', outputPath: 'data/feed/pantry-stock.json' },
-  { name: 'Utensil-Appliance', outputPath: 'data/feed/utensil-appliance.json' },
-  { name: 'Cook-Ideas', outputPath: 'data/feed/cook-ideas.json' },
+  { name: 'Stock', outputPath: 'data/feed/stock.json' },
+  { name: 'Cook', outputPath: 'data/feed/cook.json' },
 ];
 
 async function generateJsonFromSheet(sheetName, outputPath) {
